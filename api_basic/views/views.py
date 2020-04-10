@@ -1,12 +1,12 @@
-from django.shortcuts import render
-from django.http import JsonResponse, HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.parsers import JSONParser
-from api_basic.models import Article
-from api_basic.serializers import ArticleSerializer
+from django.http import HttpResponse
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status
+
+from api_basic.models import Article
+from api_basic.serializers import ArticleSerializer
+
+
 
 
 # Create your views here.
